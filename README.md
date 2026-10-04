@@ -1,6 +1,6 @@
 # DevOps example app
 
-![CI status](https://github.com/hexlet-components/devops-example-app/actions/workflows/main.yml/badge.svg) [![Count docker images pulls](https://img.shields.io/docker/pulls/hexletcomponents/devops-example-app.svg)](https://hub.docker.com/r/hexletcomponents/devops-example-app)
+![CI status](https://github.com/hexlet-components/devops-example-app/actions/workflows/main.yml/badge.svg) [![Count docker images pulls](https://img.shields.io/docker/pulls/denivladislav/devops-example-app.svg)](https://hub.docker.com/r/denivladislav/devops-example-app)
 
 This is a simple node application that shows on the main page server on which it is running and report errors to [Bugsink](https://www.bugsink.com/).
 
@@ -11,12 +11,12 @@ This is a simple node application that shows on the main page server on which it
 
 Обе особенности сделаны ради упражнений: по выводу имени сервера видно, куда именно приехал запрос за балансировщиком, а управляемая ошибка нужна, чтобы посмотреть на мониторинг в работе.
 
-Опубликовано образом `hexletcomponents/devops-example-app`, поэтому в уроках его запускают, не собирая: этим занимается курс по докеру. Рядом лежит обвязка, которую в этих курсах и разбирают: `ansible/`, `terraform/`, `docker-compose.yml`.
+Опубликовано образом `denivladislav/devops-example-app`, поэтому в уроках его запускают, не собирая: этим занимается курс по докеру. Рядом лежит обвязка, которую в этих курсах и разбирают: `ansible/`, `terraform/`, `docker-compose.yml`.
 
 ## Usage
 
 ```bash
-docker run -p 3000:3000 -e SERVER_MESSAGE="Hexlet Awesome Server" -e SENTRY_DSN="<your dsn>" hexletcomponents/devops-example-app
+docker run -p 3000:3000 -e SERVER_MESSAGE="Hexlet Awesome Server" -e SENTRY_DSN="<your dsn>" denivladislav/devops-example-app
 # open http://0.0.0.0:3000 in browser
  ```
 
